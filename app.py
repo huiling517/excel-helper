@@ -43,8 +43,8 @@ def process_excel_file(df, search_column, comparison_items, keyword_to_fill, cas
     return df_processed, mask.sum()
 
 def main():
-    st.set_page_config(page_title="Excel 關鍵字搜尋工具", layout="centered")
-    st.title("Excel 關鍵字搜尋工具")
+    st.set_page_config(page_title="Excel 關鍵字搜尋工具",page_icon="🧩",layout="centered")
+    st.title("🧩 Excel 關鍵字搜尋工具")
     st.write("上傳 Excel 檔案，選擇工作表與欄位，輸入多個關鍵字進行批次標註。")
 
     uploaded_file = st.file_uploader("請上傳您的 Excel 檔案", type=["xlsx", "xls"])
